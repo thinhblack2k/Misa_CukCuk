@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuk Cuk</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <div class="container">
+        <!-----------------------Header------------------------->
+        <div class="header">
+            <div class="header__left">
+                <div class="header__left header__sibar"></div>
+                <div class="header__logo"></div>
+            </div>
+            <div class="header__right">
+                <div class="section-left">
+                    <select name="branch" id="cbxBranch" class="combobox-select">
+                        <option value="1">Chi Nhánh Misa Hà Nội</option>
+                    </select>
+                </div>
+                <div class="center"></div>
+                <div class="section-right">
+                    <div class="section-notification"><i class="far fa-bell"></i></div>
+                    <div class="avt-user"></div>
+                    <div class="user-name">Đặng Hữu Thịnh</div>
+                    <div class="section-option"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-----------------------Menu------------------------->
+        <div class="menu">
+            <div class="menu__items">
+                <div class="menu__icon icon-24" style="background-image: url(../assets/icon/dashboard.png);">
+
+                </div>
+                <div class="menu__title">
+                    Tổng quan
+                </div>
+            </div>
+
+            <div class="menu__items">
+                <div class="menu__icon icon-24" style="background-image: url(../assets/icon/report.png);">
+                    
+                </div>
+                <div class="menu__title">
+                    Báo cáo
+                </div>
+            </div>
+
+            <div class="menu__items">
+                <div class="menu__icon icon-24" style="background-image: url(../assets/icon/dashboard.png);">
+                    
+                </div>
+                <div class="menu__title">
+                    Mua hàng
+                </div>
+            </div>
+            <div class="menu__items">
+                <div class="menu__icon icon-24" style="background-image: url(../assets/icon/dic-employee.png);">
+                    
+                </div>
+                <div class="menu__title">
+                    Danh mục nhân viên
+                </div>
+            </div>
+            <div class="menu__items">
+                <div class="menu__icon icon-24" style="background-image: url(../assets/icon/setting.png);">
+                    
+                </div>
+                <div class="menu__title">
+                    Thiết lập hệ thống
+                </div>
+            </div>
+        </div>
+
+        <!-----------------------Content------------------------->
+        <div class="content">
+            <div class="content__top">
+                <div class="content__title">Danh Sách Nhân Viên</div>
+                <div class="center"></div>
+                <button class="button button__icon" id="btnAdd" style="background-image: url(../../assets/icon/add.png);">Thêm Nhân Viên</button>
+            </div>
+            <div class="content__feature">
+                <input type="text" class="input input__icon" style="background-image: url(../../assets/icon/search.png); width: 250px;" placeholder="Tìm kiếm theo tên, số hồ sơ">
+                <select name="departner" class="combobox content__combobox" id="departner">
+                    <option value="1">Tất cả phòng ban</option>
+                </select>
+                <select name="vitri" class="combobox content__combobox" id="location">
+                    <option value="1">Tất cả vị trí</option>
+                </select>
+                <div class="center"></div>
+                <button class="button_refresh button__icon" id="btnDelete"></button>
+                <button class="button_refresh button__icon" id="btnRefresh" style="background-image: url(../../assets/icon/refresh.png);"></button>
+            </div>
+            <div class="content__table">
+                <div class="page__table">
+                    <table class="table" id="tbEmployeeList" style="border-collapse: collapse;">
+                        <thead>
+                            <tr>
+                                <th class="table__center" style="width: 40px;">STT</th>
+                                <th class="table__left" style="width: 100px;">Mã nhân viên</th>
+                                <th class="table__left" style="width: auto;">Họ và tên </th>
+                                <th class="table__left" style="width: 60px;">Giới tính</th>
+                                <th class="table__center" style="width: 90px;">Ngày sinh</th>
+                                <th class="table__center" style="width: 100px;">Điện thoại</th>
+                                <th class="table__left" >Emai</th>
+                                <th class="table__left" style="width: 80px;">Chức vụ</th>
+                                <th class="table__left" style="width: 120px;">Phòng ban</th>
+                                <th class="table__right" style="width: 90px;">Mức lương</th>
+                                <th class="table__left" style="width: 120px; padding-left: 20px;">Trạng thái CV</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                           
+                        </tbody>
+                    </table>
+                </div>
+                <div class="page__list">
+                    <!-- <hr style="border-style: inset; border-width: 2px;"> -->
+                    <div class="table__page">
+                        <div class="page__left">
+                            Hiển thị 1-100/200 nhân viên    
+                        </div>
+                        <div class="page__center">
+                            <button class="page__first"></button>
+                            <button class="page__back"></button>
+                            <div class="page__numbergroup">
+                                <button class="page__number">1</button>
+                                <button class="page__number">2</button>
+                                <button class="page__number page__selected">3</button>
+                                <button class="page__number">4</button>
+                                <button class="page__number">5</button>
+                            </div>
+                            <button class="page__next"></button>
+                            <button class="page__last"></button>
+                        </div>
+                        <div class="page__right">
+                            <select name="" id="">
+                                <option value="10">10 nhân viên / trang</option>
+                                <option value="20">20 nhân viên / trang</option>
+                                <option value="30">30 nhân viên / trang</option>
+                                <option value="40">40 nhân viên / trang</option>
+                                <option value="50">50 nhân viên / trang</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!----------------------dialog------------------------->
+    <div class="dialog" id="dlgEmployeeDetail">
+        <div class="dialog__box" style="width: 610px; height: 615px;">
+            <div class="dialog__top">
+                <div class="dialog__name">THÔNG TIN NHÂN VIÊN</div>
+                <div class="dialog__close button__icon" style="background-image: url(../../assets/icon/x.svg);"></div>
+            </div>
+            <div class="dialog__body">
+                <div class="dialog__left">
+                    <div class="dialog__picture">
+                        
+                    </div>
+                    <div class="dialog__notepicture">
+                        (Vui lòng chọn ảnh có định dạng .jpg .jpeg .png .gif... )
+                    </div>
+                </div>
+                <div class="dialog__right">
+                    <div class="row">
+                        <div class="dialog__title" >A. THÔNG TIN CHUNG:</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="" class="label">Mã nhân viên (<span class="text-red">*</span>)</label>
+                            <input type="text" class="input required" id="txtEmployeeCode">
+                            <p class="title-warning"></p>
+                        </div>
+                        <div class="col">
+                            <label for="" class="label">Họ tên nhân viên (<span class="text-red">*</span>)</label>
+                            <input type="text" class="input required" id="txtFullName">
+                            <p class="title-warning"></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="" class="label">Ngày sinh </label>
+                            <input type="date" class="input" id="dtDateOfBirth">
+                            <p class="title-warning"></p>
+                        </div>
+                        <div class="col">
+                            <label for="" class="label">Giới tính</label>
+                            <div class="w-full">
+                                <select name="gender" class="combobox max-w-full" id="cbxGender">
+                                    <option value="0">Nam</option>
+                                    <option value="1">Nữ</option>
+                                    <option value="2">Không xác định</option>
+                                </select>
+                            </div>
+                            <p class="title-warning"></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="" class="label">Số CMND/ CCCD (<span class="text-red">*</span>)</label>
+                            <input type="text" class="input required" id="txtIdentity"> 
+                            <p class="title-warning"></p>
+                        </div>
+                        <div class="col">
+                            <label for="" class="label">Ngày cấp</label>
+                            <input type="date" class="input">
+                            <p class="title-warning"></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="txtAdress" class="label">Nơi cấp</label>
+                            <input type="text" class="input" id="txtAdress">
+                            <p class="title-warning"></p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <label for="txtEmail" class="label">Email (<span class="text-red">*</span>)</label>
+                            <input type="text" class="input required" id="txtEmail">
+                            <p class="title-warning"></p>
+                        </div>
+                        <div class="col">
+                            <label for="txtPhoneNumber" class="label">Số điện thoại (<span class="text-red">*</span>)</label>
+                            <input type="text" class="input required" id="txtPhoneNumber">
+                            <p class="title-warning"></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="dialog__title" >B. THÔNG TIN CÔNG VIỆC:</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="" class="label">Vị trí </label>
+                            <div>
+                                <select name="lacation" class="combobox max-w-full" id="lacation">
+                                    <option value="1">Giám đốc</option>
+                                    <option value="2">Trưởng phòng</option>
+                                    <option value="3">Phó giám đốc</option>
+                                </select>
+                            </div>
+                            <p class="title-warning"></p>
+                        </div>
+                        <div class="col">
+                            <label for="id_departner" class="label">Phòng ban </label>
+                            <div>
+                                <select name="departner" class="combobox max-w-full" id="id_departner">
+                                    <option value="1">Phòng nhân sự</option>
+                                    <option value="2">Phòng sáng tạo</option>
+                                    <option value="3">Phòng đào tạo</option>
+                                </select>
+                            </div>
+                            <p class="title-warning"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dialog__footer">
+                <div class="center"></div>
+                <button class="button button--cancel">Hủy</button>
+                <button class="button" id="btnSave"><i class="fas fa-save"></i> Lưu</button>
+            </div>
+        </div>
+    </div>
+
+    <!--------------------dialog_warning------------------->
+
+    <div class="dialog dialog__warning" hidden>
+        <div class="dialog__box">
+            <div class="dialog__top">
+                <div class="dialog__name">Thông báo</div>
+                <div class="dialog__close button__icon" style="background-image: url(../../assets/icon/x.svg);"></div>
+            </div>
+
+            <div class="dialog__body">
+                
+            </div>
+
+            <div class="dialog__footer">
+                <div class="center"></div>
+                <button class="button button--cancel">Cancel</button>
+                <button class="button" id="btnSave"> OK</button>
+            </div>
+        </div>
+    </div>
+
+    <!-----------------------toast------------------------->
+
+
+     <!-- loading -->
+     <div class="loading" hidden>
+        <div class="loading__content">
+            <div class="loading__icon"></div>
+            <div class="loading__text">Đang xử lý</div>
+        </div>
+    </div>
+
+    <!----------------apenjs----------------->
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/employee.js"></script>
+</body>
+</html>

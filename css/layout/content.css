@@ -1,0 +1,52 @@
+.content {
+    position: relative;
+    padding: 10px;
+}
+
+.content .content__top {
+    display: flex;
+    align-items: center;
+}
+
+.content__top .content__title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.content .content__combobox {
+    width: 180px;
+    margin-left: 16px;
+}
+
+.content .content__feature {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.content__feature .button_refresh {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border: solid 1px #cccccc;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.content__table {
+    height: calc(100% - 150px);
+}
+
+.page__table {
+    overflow: scroll;
+    margin-top: 10px;
+    height: 400px;
+}
+
+.page__list {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0 10px;
+}

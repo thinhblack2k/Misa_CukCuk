@@ -1,0 +1,12 @@
+.combobox {
+    border: solid 1px #cccccc;
+    border-radius: 4px;
+    height: 40px;
+    cursor: pointer;
+    padding: 0 16px;
+}
+
+.combobox-select {
+    cursor: pointer;
+    border: none;
+}

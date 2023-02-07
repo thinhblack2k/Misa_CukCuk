@@ -1,0 +1,58 @@
+@import url(../css/layout/container.css);
+@import url(../css/layout/header.css);
+@import url(../css/layout/menu.css);
+@import url(../css/layout/content.css);
+@import url(../css/base/icon.css);
+@import url(../css/base/button.css);
+@import url(../css/base/combobox.css);
+@import url(../css/base/input.css);
+@import url(../css/base/dialog.css);
+@import url(../css/base/table.css);
+@import url(../css/base/loading.css);
+@import url(../assets/font/fontawesome-5.15.1/css/all.min.css);
+@import url(../assets/font/fontawesome-5.15.1/js/all.min.js);
+
+@font-face {
+    font-family: Font Basic;
+    src: url(../assets/font/GoogleSans-Regular.otf);
+}
+
+@font-face {
+    font-family: Font Bold;
+    src: url(../assets/font/GoogleSans-Bold.otf);
+}
+
+@font-face {
+    font-family: Font Italic;
+    src: url(../assets/font/GoogleSans-Italic.otf);
+}
+
+@font-face {
+    font-family: Font Medium ;
+    src: url(../assets/font/GoogleSans-Medium.otf);
+}
+
+@font-face {
+    font-family: Font Regular;
+    src: url(../assets/font/GoogleSans-Regular.otf);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.center {
+    flex: 1;
+}
+
+.text-red {
+    color: red;
+}
+
+.max-w-full {
+    width: 100%;
+}

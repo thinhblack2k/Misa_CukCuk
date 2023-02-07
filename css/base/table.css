@@ -1,0 +1,112 @@
+.table{
+    width: 100%;
+    font-family: Font Medium;
+    font-size: 13px;
+}
+
+tr{
+    border-bottom: 1px solid #dbdbdb;
+    height: 48px;
+}
+
+tr:nth-child(even) {
+    background-color: #f7f7f7;
+}
+
+.table__left {
+    text-align: left;
+}
+
+.table__center {
+    text-align: center;
+}
+
+.table__right {
+    text-align: right;
+}
+
+table tr.row--selected {
+    background-color: #dedede;
+}
+
+
+
+
+/*---------------------------------Phần Phân Trang ---------------------------------*/
+.table__page {
+    position: relative;
+    width: 100%;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.table__page button {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    margin: 4px;
+    cursor: pointer;
+}
+
+.page__selected {
+    pointer-events: none;
+    background-color: #019160;
+    color: #fff;
+}
+
+.page__left {
+    position: absolute;
+    left: 0;
+}
+
+.page__center {
+    display: flex;
+}
+
+.page__right {
+    position: absolute;
+    right: 0;
+}
+
+.page__first {
+    background-image: url(../../assets/icon/btn-firstpage.svg);
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    border: none;
+    background-color: #fff;
+}
+
+.page__back {
+    background-image: url(../../assets/icon/btn-prev-page.svg);
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    border: none;
+    background-color: #fff;
+}
+
+.page__number {
+    border-radius: 50%;
+    border: solid 1px #bbbbbb;
+}
+
+.page__number:hover {
+    background-color: #fff;
+}
+
+.page__next {
+    background-image: url(../../assets/icon/btn-next-page.svg);
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    border: none;
+    background-color: #fff;
+}
+
+.page__last {
+    background-image: url(../../assets/icon/btn-lastpage.svg);
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    border: none;
+    background-color: #fff;
+}
